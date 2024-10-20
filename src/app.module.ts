@@ -28,7 +28,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config'
     // Conectar com o Postgres
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: 'postgres://postgres:superpostgres@localhost:5432/dreamcake',
+      url: 'postgres://user-postgres:senha-do-postgres@localhost:5432/dreamcake',
       autoLoadEntities: true,
       synchronize: true,
       // entities: [Category],
